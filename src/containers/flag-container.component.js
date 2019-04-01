@@ -25,12 +25,12 @@ class CountryFlagContainer extends Component {
     return (
       <div>
         <div className="search text-center">
-          <input type="text" onChange={this.search.bind(this)} />{" "}
-        </div>{" "}
+          <input type="text" onChange={this.search.bind(this)} />
+        </div>
         <CountryFlagList
           countries={this.props.visibleCountries}
           deleteCountry={this.deleteCountry.bind(this)}
-        />{" "}
+        />
       </div>
     );
   }

@@ -20,13 +20,13 @@ class ContinentsContainer extends Component {
     return (
       <div>
         <select onChange={e => this.chooseContinent(e)}>
-          <option value="Europa"> Europa </option>{" "}
-          <option value="Afryka"> Afryka </option>{" "}
-        </select>{" "}
+          <option value="Europa"> Europa </option>
+          <option value="Afryka"> Afryka </option>
+        </select>
         <CountryFlagList
           countries={this.props.visibleCountries}
           deleteCountry={this.deleteCountry.bind(this)}
-        />{" "}
+        />
       </div>
     );
   }
